@@ -2,10 +2,13 @@
 <html>
     <head>
         <title>Example</title>
+        <script src="./validate.js"></script>
+       
     </head>
-    <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
-        <form>
+    <body style="margin:10px;">
+        
+        <h1>Animal Shelter</h1>
+        
             <label for="number">Select mystery number: </label>
             <select name="number" id="number">
                 <option value="1">1</option>
@@ -19,8 +22,13 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
             </select>
+            <br>
+            <br>
             <label for="guess">Type guess here: </label>
             <input type="text" id="guess"></input>
-        </form>
+            <button class="btn validate" id=valid_btn onclick="validate_btn_click()">Check</button>
+
+        
+        <p id="corrector"></p>
     </body>
 </html>
